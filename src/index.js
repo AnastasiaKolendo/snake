@@ -4,6 +4,7 @@ import './index.css';
 import { BrowserRouter, Route, Switch, Link, Redirect } from 'react-router-dom';
 
 class Square extends React.Component {
+    //a method that renders the component
     render() {
         let elementClass;
         if (this.props.isNom) {
@@ -19,6 +20,8 @@ class Square extends React.Component {
     }
 }
 
+//A “key” is a special string attribute you need to include when creating lists of elements in React. 
+//Keys are used in React to identify which items in the list are changed, updated or deleted.
 class Board extends React.Component {
     render() {
         const snake = this.props.snake;
@@ -311,7 +314,7 @@ class GameInProgress extends React.Component {
     }
 }
 
-
+//jsx, adds XML syntax to JavaScript.
 class GameOver extends React.Component {
     render() {
         return (
@@ -321,7 +324,7 @@ class GameOver extends React.Component {
                         <td><div style={{ textAlign: 'center', fontSize: '20px' }}> Game over </div></td>
                     </tr>
                     <tr>
-                        <td><div className="poop">💩</div></td>
+                        <td><div className="poop">💀</div></td>
                     </tr>
                     <tr><td>
                         <div className="score" style={{ textAlign: 'center' }}> Your score is {this.props.score}</div></td>
