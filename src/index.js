@@ -324,7 +324,7 @@ class GameOver extends React.Component {
                         <td><div style={{ textAlign: 'center', fontSize: '20px' }}> Game over </div></td>
                     </tr>
                     <tr>
-                        <td><div className="poop">💀</div></td>
+                        <td><div className="game-over-emoji">💀</div></td>
                     </tr>
                     <tr><td>
                         <div className="score" style={{ textAlign: 'center' }}> Your score is {this.props.score}</div></td>
